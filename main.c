@@ -41,9 +41,10 @@ int main()
 
 		Insert(data, position, &head);
 	}
-	Delete(3,&listSize,&head);
+	
+	/* DO STUFF */
+	
 	Print(head);
-	printf("Largest is %d ", Largest(head));
 	return 0;
 }
 
@@ -72,7 +73,7 @@ void Insert(int data, int position, tNode **head)
 	tempNode->next = newNode;
 }
 
-void Delete(int position, int *listSize, tNode **head)
+void Delete(int position, int *listSize, tNode **head) /* List size - in case position is not valid for deletion*/
 {
 	tNode *nodeToDelete = *head;
 	tNode *tempNode = *head;
