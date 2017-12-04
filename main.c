@@ -10,6 +10,7 @@ typedef struct Node
 void Insert(int data, int where, tNode **head);
 void Delete(int n, int *listSize,tNode **head);
 int Largest(tNode *head);
+int Smallest(tNode *head);
 void Sort(tNode *head);
 void ReverseIterative(tNode **head);
 void ReverseRecursion(tNode *temp, tNode **head);
