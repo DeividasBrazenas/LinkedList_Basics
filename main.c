@@ -90,7 +90,7 @@ void Delete(int position, int *listSize, tNode **head) /* List size - in case po
 	{
 		*head = nodeToDelete->next;
 		free(nodeToDelete);
-		*listSize--;
+		(*listSize)--;
 		return;
 	}
 
@@ -100,7 +100,7 @@ void Delete(int position, int *listSize, tNode **head) /* List size - in case po
 	nodeToDelete = tempNode->next;
 	tempNode->next = nodeToDelete->next;
 	free(nodeToDelete);
-	*listSize--;
+	(*listSize)--;
 }
 
 void Sort(tNode *head)
